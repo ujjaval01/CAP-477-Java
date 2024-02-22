@@ -6,7 +6,10 @@ public class Calculator {
 
     public static void main(String args[]) {
 
-        System.out.println("This is a fully feature loaded Calculator!");
+        System.out.println("__________________________________________________________________________");
+        System.out.print("\n");
+
+        System.out.println("This is a fully feature loaded Calculator, use carefully..!");
         try (Scanner sc = new Scanner(System.in)) {
             System.out.print("Enter your first value: ");
             float a = sc.nextFloat();
