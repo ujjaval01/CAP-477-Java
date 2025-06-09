@@ -1,4 +1,3 @@
-package patternPrinting;
 
 public class invertedHalfPM {
     public static void main(String[] args) {

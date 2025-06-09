@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class p6 {
 
 	public static void main(String[] args) {
 		//fill your code here

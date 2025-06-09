@@ -1,4 +1,4 @@
-package patternPrinting;
+
 
 import java.util.Scanner;
 

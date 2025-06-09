@@ -1,4 +1,3 @@
-package patternPrinting;
 import java.util.Scanner;
 
 public class halfPyramid {

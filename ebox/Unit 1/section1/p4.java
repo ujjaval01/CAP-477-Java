@@ -24,7 +24,7 @@ public static int getNoOfStudents() {
 }
 };
 
-public class Main {
+public class p4 {
     public static void main(String[] args) {
         System.out.println("Enter the student details:");
         String sn;

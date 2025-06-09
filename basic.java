@@ -5,15 +5,15 @@ public class basic {
         Scanner scanner = new Scanner(System.in);
         
         
-        
         boolean isMeenaTurn = true;
         int chances = 10;
+        int n = 0; // Initial number, can be set to any value
         
         while (chances > 0) {
             
             if (isMeenaTurn) {
                 System.out.println("Enter the initial number:");
-            int n = scanner.nextInt();
+                n = scanner.nextInt();
                 n++; // Meena increases the number by 1
                 if (n % 3 == 0) {
                     System.out.println("Meena wins!");
