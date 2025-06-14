@@ -16,7 +16,7 @@ public class palindrome {
         // }
 
         String str = Integer.toString(originalNum);
-        String rev = new StringBuilder(str).reverse().toString();
+        String rev = new StringBuilderMethods(str).reverse().toString();
 
         if(str.equals(rev)){
             System.out.println("The number " + originalNum+ " is a palindrome");

@@ -34,10 +34,13 @@ class StringMethods{
         // String str1 = "UjjAvAl";
         // System.out.println(str1.toLowerCase());
 
-        //String concatination
-        String str = "Ujjaval";
-        str = str + " Saini";
-        System.out.println(str);
+        // //String concatination
+        // String str = "Ujjaval";
+        // str = str + " Saini";
+        // System.out.println(str);
+
+
+        
 
 
 
