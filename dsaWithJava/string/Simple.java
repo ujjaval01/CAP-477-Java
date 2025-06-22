@@ -2,10 +2,21 @@ import java.util.Scanner;
 
 public class Simple {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your name: ");
-        String name = sc.nextLine();
-        System.out.println("Your name is "+ name);
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter your name: ");
+        // String name = sc.nextLine();
+        // System.out.println("Your name is "+ name);
+
+
+        String str = "UJJAVAL";
+        int ln = str.length();  
+       // System.out.println(ln);
+        String ans = "";
+
+        for(int i = str.length()-1; i >= 0; i--){
+            ans+= str.charAt(i);
+        }
+        System.out.println(ans);
     }
 }
         
