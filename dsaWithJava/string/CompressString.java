@@ -1,6 +1,6 @@
 public class CompressString {
     public static void main(String[] args) {
-        String str = "aaabbbbccddde";
+        String str = "aaabbbbfccddde";
         String ans = "" + str.charAt(0);
         int count = 1;
         for(int i = 1; i < str.length(); i++){
