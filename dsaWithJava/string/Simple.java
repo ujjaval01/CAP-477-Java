@@ -2,6 +2,13 @@ import java.util.Scanner;
 
 public class Simple {
     public static void main(String[] args) {
+
+        // ASCII ranges: 
+        // '0'-'9' = 48–57
+        // 'A'-'Z' = 65–90
+        // 'a'-'z' = 97–122
+        // space = 32
+
         // Scanner sc = new Scanner(System.in);
         // System.out.println("Enter your name: ");
         // String name = sc.nextLine();
