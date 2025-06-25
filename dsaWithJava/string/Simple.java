@@ -15,15 +15,23 @@ public class Simple {
         // System.out.println("Your name is "+ name);
 
 
-        String str = "UJJAVAL";
-        int ln = str.length();  
-       // System.out.println(ln);
-        String ans = "";
+    //     String str = "UJJAVAL";
+    //     int ln = str.length();  
+    //    // System.out.println(ln);
+    //     String ans = "";
 
-        for(int i = str.length()-1; i >= 0; i--){
-            ans+= str.charAt(i);
-        }
-        System.out.println(ans);
+    //     for(int i = str.length()-1; i >= 0; i--){
+    //         ans+= str.charAt(i);
+    //     }
+    //     System.out.println(ans);
+
+
+        String str = "ujjaval";
+        String str2 = "uj";
+        char ch = str.charAt(3);
+        int a = str2.indexOf(ch);
+        System.out.println(a);
+        
     }
 }
         
