@@ -1,4 +1,4 @@
-package oopsConcepts;
+package constructorPractice;
 
 import java.util.Scanner;
 

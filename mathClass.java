@@ -20,12 +20,14 @@ public class mathClass {
     //    double o;
     //    double p;
 
-       System.out.println("Enter o: ");
+       System.out.print("Enter o: ");
        double o = sc.nextDouble();
-       System.out.println("Enter p: ");
-       double p = sc.nextDouble();
-      //  double q = ((o*o)+(p*p));
-       double e = Math.sqrt(((o*o)+(p*p)));
-       System.out.println(e);
+       System.out.println(Math.sqrt(o));
+
+    //    System.out.println("Enter p: ");
+    //    double p = sc.nextDouble();
+    //   //  double q = ((o*o)+(p*p));
+    //    double e = Math.sqrt(((o*o)+(p*p)));
+    //    System.out.println(e);
     }
 }

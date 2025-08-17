@@ -1,4 +1,4 @@
-package oopsConcepts;
+package classPractice;
 
 class AddEmployee{
     private int id;

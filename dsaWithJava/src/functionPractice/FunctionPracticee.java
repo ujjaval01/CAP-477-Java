@@ -1,6 +1,6 @@
-package oopsConcepts;
+package functionPractice;
 
-public class FunctionPractice {
+public class FunctionPracticee {
 
     // static int change(int a){
     //     System.out.println("change funtion" + a);

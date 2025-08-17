@@ -1,4 +1,4 @@
-package methodOverloading;
+package polymorphismPractice.compileTimePoly;
 
 /* POLYMORPHISM:- Ek hi method ya reference k alg alg behaviour hona, depending on object type and argument
  For interview:-Polymorphism is allowed us to perform a single task in different ways
@@ -6,7 +6,7 @@ package methodOverloading;
   1. compile time polymorphism(method overloading)
   2. Run time polymorphism(method overriding)
 
-  compile time polymorphism(method overloading) me jub code compile hota h tub java compiler decide karta h kon sa
+  compile time polymorphism(method overloading) me jub code compile hota h, tub java compiler decide karta h kon sa
   method compile hoke run hoga
  */
 

@@ -1,4 +1,4 @@
-package methodOverriding;
+package polymorphismPractice.runTimePoly;
 /* POLYMORPHISM:- Ek hi method ya reference k alg alg behaviour hona, depending on object type and argument
  For interview:-Polymorphism is allowed us to perform a single task in different ways
  hum is program ko polymorphism se v relate kr skte hai, quki polymorphism 2 types ke hote h
@@ -38,6 +38,7 @@ public class methodOverriding {
     static void main() {
         animal a = new animal(); a.sound();
         animal d = new dog(); d.sound(); d.leg();
+        // refrence will be super class and the obj will be created of subClass
         animal c = new cat(); c.sound();
         /* in this question we have single refrence type(animal), but object type dog or cat are diffrent(mean
         performing single task in diffrent way)

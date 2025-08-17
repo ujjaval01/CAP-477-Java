@@ -1,6 +1,5 @@
-package oopsConcepts;
+package constructorPractice;
 
-import javax.xml.transform.Source;
 import java.util.Scanner;
 
 class workers{

@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class TextAdventure {
     private AdventureModel model;
     private Adventurer player;
-    
+
     public TextAdventure() {
         model = new AdventureModel();
         player = new Adventurer("Adventurer", model.getStartingRoom());
@@ -13,20 +13,20 @@ public class TextAdventure {
     public void startGame() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to the Text-Based Adventure Game!");
-        
+
         while (true) {
             System.out.println(player.getCurrentRoom().getDescription());
             System.out.print("> ");
             String command = sc.nextLine().toLowerCase();
-            
+
             if (command.equals("exit")) {
                 System.out.println("Thanks for playing!");
                 break;
             }
-            
+
             handleCommand(command);
         }
-        
+
         sc.close();
     }
 
@@ -49,6 +49,12 @@ public class TextAdventure {
             System.out.println("Unknown command.");
         }
     }
+
+    // ✅ Added main method to run the game
+    public static void main(String[] args) {
+        TextAdventure game = new TextAdventure();
+        game.startGame();
+    }
 }
 
 class AdventureModel {
@@ -69,6 +75,9 @@ class AdventureModel {
 
         start.setExit("north", hall);
         hall.setExit("south", start);
+
+        // Example: add an item to the start room
+        start.addItem("key");
 
         rooms.put("start", start);
         rooms.put("hall", hall);
@@ -165,4 +174,3 @@ class Room {
         items.remove(item);
     }
 }
-

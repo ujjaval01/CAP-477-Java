@@ -1,4 +1,4 @@
-package oopsConcepts;
+package classPractice;
 
 import java.util.Scanner;
 

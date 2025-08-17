@@ -1,4 +1,4 @@
-package oopsConcepts;
+package functionPractice;
 
 public class PatternFunction {
 

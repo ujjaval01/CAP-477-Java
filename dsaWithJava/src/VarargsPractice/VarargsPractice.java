@@ -1,4 +1,4 @@
-package oopsConcepts;
+package VarargsPractice;
 
 public class VarargsPractice {
 

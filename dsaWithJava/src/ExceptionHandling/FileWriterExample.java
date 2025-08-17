@@ -2,7 +2,7 @@ package ExceptionHandling;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class WroteToFile {
+public class FileWriterExample {
     public static void main(String[] args) {
         try {
             FileWriter writer = new FileWriter("C:\\Users\\ujjav\\Desktop\\newFile.txt", true);
