@@ -4,6 +4,7 @@ class myException extends Exception{
     public myException(String msg){
         super(msg);
     }
+
 }
 
 public class CustomException {
@@ -11,7 +12,7 @@ public class CustomException {
         try{
             throw new myException("This is my custom exception...");
         }catch (myException e){
-            System.out.println("Catch: " + e.getMessage());
+//            System.out.println("Catch: " + e.getMessage());
         }
     }
 }
