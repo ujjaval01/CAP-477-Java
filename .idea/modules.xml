@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DsaWithJava/DsaWithJava.iml" filepath="$PROJECT_DIR$/DsaWithJava/DsaWithJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vsCode.iml" filepath="$PROJECT_DIR$/vsCode.iml" />
+    </modules>
+  </component>
+</project>
