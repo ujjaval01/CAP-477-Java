@@ -1,9 +1,13 @@
 package ExceptionHandlingPractice;
 
 class ExcClass extends Exception{
+    String msg;
+    ExcClass(String msg){
+        this.msg = msg;
+    }
     @Override
     public String toString(){
-        return "this the is the toString method";
+        return "this is the toString method";
     }
     public String getMessage(){
         return "i am the get message";
@@ -12,14 +16,15 @@ class ExcClass extends Exception{
 
 public class ExceptionClass {
     static void main() {
-//        ExcClass e = new ExcClass();
-//        System.out.println(e.toString());
-        int a = 10;
-        if(a < 90){
+        int a = 90;
+        if(a == 90){
             try{
-               throw new ExcClass();
+//               throw new ExcClass("i am const msg");
+               throw new ArithmeticException("1. I am the arithmetic exception");
             }catch (Exception e){
-                System.out.println(e);
+                System.out.println("2. " + e.getMessage());
+                System.out.println("3. " + e.toString() + "\n\"4. \" + ");
+                e.printStackTrace();
             }
         }
     }
