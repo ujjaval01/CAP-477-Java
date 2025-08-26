@@ -16,6 +16,12 @@ class ExcClass extends Exception{
 
 public class ExceptionClass {
     static void main() {
+        String s = "name";
+        StringBuilder sb = new StringBuilder(s);
+        StringBuilder rev = sb.reverse();
+        if(rev.toString().equals(s)){
+
+        }
         int a = 90;
         if(a == 90){
             try{
