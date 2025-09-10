@@ -2,9 +2,12 @@ package Collections.arrayList;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class SimpleExample {
     static void main() {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
         List <Integer> al = new ArrayList<>();
         al.add(55);      // adding the element in the list
         al.add(80);
