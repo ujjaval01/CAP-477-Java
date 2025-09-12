@@ -1,6 +1,6 @@
-package G4G_practice;
+package LeetCodeQuestions;
 
-public class question1 {
+public class Q161OneEditDistance {
     public static void main(String[] args) {
         String s = "banana";
         String[] arr = {"apple", "bane", "orange", "banaba", "mangoes"};

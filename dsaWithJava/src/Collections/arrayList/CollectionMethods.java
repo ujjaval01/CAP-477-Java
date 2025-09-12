@@ -32,6 +32,8 @@ public class CollectionMethods {
 
 //        list.addAll();
 
+        list.retainAll(list2);
+
         System.out.println(list);
 
 
