@@ -2,6 +2,7 @@ package Collections.arrayList;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class CollectionMethods {
     static void main() {
@@ -11,11 +12,11 @@ public class CollectionMethods {
         list.add(23);
         list.add(89);
 
-        List<Integer> list2 = new ArrayList<>();      //list 2
-        list.add(41);
-        list.add(42);
-        list.add(43);
-        list.add(45);
+//        List<Integer> list2 = new ArrayList<>();      //list 2
+//        list.add(41);
+//        list.add(42);
+//        list.add(43);
+//        list.add(45);
 
 
         System.out.println(list);
@@ -32,7 +33,17 @@ public class CollectionMethods {
 
 //        list.addAll();
 
-        list.retainAll(list2);
+//        list.retainAll(list2);
+
+
+//        // convert to array
+//        Object[] a = list.toArray();
+//        for (Object arr: a){
+//            int temp = (Integer) arr;
+//            System.out.println(temp);
+//        }
+
+        System.out.println(list.getFirst());
 
         System.out.println(list);
 
