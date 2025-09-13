@@ -43,9 +43,24 @@ public class CollectionMethods {
 //            System.out.println(temp);
 //        }
 
-        System.out.println(list.getFirst());
+//        System.out.println(list.getFirst());      //getting first element
+//        System.out.println(list.getLast());       // getting last element
+//        System.out.println(list.getClass());     //getting class
 
+//        list.set(1,66);     // replace
+
+//        try{
+//            list.add(5,71);
+//        }catch (Exception e){
+//            System.out.println(e);
+//        }finally {
+//            System.out.println(list);
+//        }
+//        list.remove(1);
+//        System.out.println(list);
+        list.remove( Integer.valueOf(55));
         System.out.println(list);
+
 
 
     }
