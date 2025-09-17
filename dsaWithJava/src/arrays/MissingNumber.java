@@ -2,8 +2,14 @@ package arrays;
 
 public class MissingNumber {
     static void main() {
-        int[] arr = {1,2,3,4,6,7,8};
-        long n = arr.length + 1;
+        int[] arr = {3,0,1};
+        long n = arr.length + 1;;
+        for(int i = 0; i<arr.length; i++){
+            if(arr[i] == 0){
+                 n = arr.length;
+                 break;
+            }
+        }
         long sum = n*(n+1)/2;
         long arrSum = 0;
         for (int a: arr){
