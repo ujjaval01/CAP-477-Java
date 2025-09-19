@@ -1,6 +1,6 @@
 package arrays;
 
-public class RemoveDuplicateFromArray {
+public class RemoveDuplicateFromSortedArray {
     static void main() {
         int[] arr = {1,2,3,1,4,2,5,3};
         int[] cleanArr = {};
