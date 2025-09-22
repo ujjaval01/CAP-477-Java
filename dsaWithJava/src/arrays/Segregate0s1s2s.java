@@ -18,10 +18,10 @@ public class Segregate0s1s2s {
         for (int i = 0; i < zeros; i++){
             arr[i] = 0;
         }
-        for(int i = zeros; i< ones; i++){
+        for(int i = zeros; i< zeros+ones; i++){
             arr[i] = 1;
         }
-        for(int i = ones; i< arr.length; i++){
+        for(int i = zeros+ones; i< arr.length; i++){
             arr[i] = 2;
         }
         for (int b : arr) {
