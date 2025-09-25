@@ -1,4 +1,4 @@
-package BubbleSort;
+package SortBubble;
 
 public class simpleSorting {
     static void main() {
