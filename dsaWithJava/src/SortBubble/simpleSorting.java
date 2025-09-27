@@ -1,5 +1,7 @@
 package SortBubble;
-
+/*
+In every case T.C - O(n*n)
+*/
 public class simpleSorting {
     static void main() {
         int[] arr = {60,20,50,40,30,10};

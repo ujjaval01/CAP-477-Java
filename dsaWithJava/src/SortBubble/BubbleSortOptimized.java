@@ -1,5 +1,8 @@
 package SortBubble;
-
+/*
+Best case T.C - O(n)
+Avg & worst case T.C- O(n*n)
+*/
 public class BubbleSortOptimized {
     static void main(String[] args) {
         int[] arr = {1,2,5,3,4};
