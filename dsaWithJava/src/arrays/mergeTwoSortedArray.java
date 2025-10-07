@@ -29,7 +29,7 @@ public class mergeTwoSortedArray {
             }
         }
         if(i==a.length){
-            while (j< b.length){
+            while (j < b.length){
                 c[k] = b[j];
                 j++;
                 k++;

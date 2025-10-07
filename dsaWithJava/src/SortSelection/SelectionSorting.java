@@ -10,12 +10,10 @@ public class SelectionSorting {
     }
     public static void sort(int[] arr){
         int n = arr.length;
-        for(int i = 0; i< n-1; i++){
-            int min = Integer.MAX_VALUE;
-            int minIndex = 0;
-            for(int j = i; j< n; j++){
-                if(arr[j] < min){
-                    min = arr[j];
+        for(int i = 0; i<n-1; i++){
+            int minIndex = i;
+            for(int j = i+1; j < n; j++){
+                if(arr[j] < arr[minIndex]){
                     minIndex = j;
                 }
             }
@@ -23,5 +21,6 @@ public class SelectionSorting {
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
         }
+
     }
 }

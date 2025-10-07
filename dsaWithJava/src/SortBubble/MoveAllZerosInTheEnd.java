@@ -14,5 +14,9 @@ public class MoveAllZerosInTheEnd {
             }
         }
 
+        for(int e: arr){
+            System.out.print(e + " ");
+        }
+
     }
 }

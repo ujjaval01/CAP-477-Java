@@ -13,7 +13,7 @@ public class selectionSortWithLstIndx {
         int n = arr.length;
         for(int i = n-1; i >= 0; i--){
             int maxIndex = i;
-            for(int j = i+1; j<n-1; j++){
+            for(int j = 0; j < i; j++){
                 if(arr[j] > arr[maxIndex]){
                     maxIndex = j;
                 }
