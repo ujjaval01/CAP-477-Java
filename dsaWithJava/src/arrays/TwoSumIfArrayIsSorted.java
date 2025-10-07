@@ -1,9 +1,9 @@
 package arrays;
 
 public class TwoSumIfArrayIsSorted {
-    public static void main(String[] args) {  // ✅ correct signature
-        int[] numbers = {2,7,11,15};
-        int target = 9;
+     static void main(String[] args) {
+        int[] numbers = {2,7,11,15,17};
+        int target = 24;
         int[] nums = twoSum(numbers, target);
 
         for(int e: nums){
