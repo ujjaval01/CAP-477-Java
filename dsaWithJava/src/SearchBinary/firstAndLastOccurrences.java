@@ -16,10 +16,10 @@ public class firstAndLastOccurrences {
     static ArrayList<Integer> find(int[] arr, int k) {
         // code here
         int n = arr.length;
-        int low = 0;
-        int high = n-1;
 
         //first occurrence.....
+        int low = 0;
+        int high = n-1;
         int idx1 = -1;
         while(low<=high){
             int mid = (low+high)/2;
@@ -32,6 +32,8 @@ public class firstAndLastOccurrences {
         }
 
         //last occurrrence
+        low = 0;
+        high = n-1;
         int idx2 = -1;
         while(low<=high){
             int mid = (low+high)/2;
