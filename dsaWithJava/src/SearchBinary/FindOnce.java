@@ -13,12 +13,10 @@ Output: 1
 
 public class FindOnce {
     static void main() {
-//        int[] arr = {1,1,2,2,3,4,4,5,5};
-        int[] arr = {1, 2, 2, 3, 3};
+        int[] arr = {1,1,2,2,3,4,4,5,5};
         int res = findOnce(arr);
         System.out.println(res);
     }
-
     static int findOnce(int[] arr){
         int n = arr.length;
         int low = 0;
@@ -30,21 +28,13 @@ public class FindOnce {
             int mid = low + (high - low) / 2;
             if(arr[mid] != arr[mid-1] && arr[mid] != arr[mid+1]) return arr[mid];
             int fst = mid, snd = mid;
-            if(arr[mid-1] ==  arr[mid]){
-                fst = mid-1;
-            }else{
-                snd = mid+1;
-            }
+            if(arr[mid-1] ==  arr[mid]) fst = mid-1;
+            else snd = mid;
             int leftCount = fst - low;
             int rightCount = high - snd;
-            if(leftCount % 2 == 0){
-                low = snd + 1;
-            }else {
-                high = fst -1;
-            }
+            if(leftCount % 2 == 0) low = snd + 1;
+            else high = fst -1;
         }
         return 123;
     }
-
-
 }
