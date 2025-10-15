@@ -8,7 +8,12 @@ public class Q231SquareOfTwo {
 
     }
     static boolean check(int n){
-
+        if(n <= 0) return false;
+        int i = 1;
+        while(i<n){
+            i = i*2;
+        }
+        return i == n;
 
 
 //        if(n == 0) return true;
