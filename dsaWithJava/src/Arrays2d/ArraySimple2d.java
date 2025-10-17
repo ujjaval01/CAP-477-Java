@@ -1,6 +1,5 @@
-package arrays;
-
-public class ArraySimple2d {
+package Arrays2d;
+public class ArraySimple2d{
     public static void main(String[] args) {
         int [][] num1 = {{101,102,103,104},
                          {201,202,203,204}};
