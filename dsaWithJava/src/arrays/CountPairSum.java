@@ -1,4 +1,11 @@
 package arrays;
+/*Given two sorted arrays arr1 and arr2 of distinct elements.
+Given a value x. The problem is to count all pairs from both arrays whose sum equals x.
+Note: The pair has an element from each array.
+Examples:
+Input: x = 10, arr1[] = [1, 3, 5, 7], arr2[] = [2, 3, 5, 8]
+Output: 2
+Explanation: The pairs are: (5, 5) and (7, 3).  */
 
 public class CountPairSum {
     static void main() {
