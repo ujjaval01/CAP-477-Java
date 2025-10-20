@@ -1,8 +1,14 @@
 package arrays;
 
+import java.util.Arrays;
+
 public class RotateArrayOnePositionOptimized {
     static void main() {
-
+        int[] arr = {1,2,3,4,5,6,7,8};
+        int k = 2;
+        Solution s = new Solution();
+        s.rotate(arr, k);
+        System.out.println(Arrays.toString(arr));
     }
 }
 
@@ -21,6 +27,7 @@ class Solution {
 
         // Step 3: Reverse remaining elements
         reverse(arr, k, n - 1);
+        System.out.println();
     }
 
     private void reverse(int[] arr, int start, int end) {
