@@ -16,7 +16,7 @@ public class RotateArrayOnePosition {
             i++;
             j--;
         }
-        int k = 1;
+        int k = 2;
         int l = arr.length-1;
         while (k < l){
             int temp = arr[k];
