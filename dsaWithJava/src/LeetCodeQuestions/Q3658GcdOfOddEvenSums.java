@@ -1,6 +1,6 @@
 package LeetCodeQuestions;
 
-public class Q3658L {
+public class Q3658GcdOfOddEvenSums {
     static void main() {
         int n = 4;
         int res = gcdOfOddEvenSums(n);
