@@ -6,13 +6,13 @@ public class PowerLinear {
     static void main() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Base: ");
-        int a = sc.nextInt();
+        int base = sc.nextInt();
         System.out.print("Enter Power: ");
-        int b = sc.nextInt();
-        System.out.println(a + " raise to the power " + b + " is: " + pow(a,b));
+        int power = sc.nextInt();
+        System.out.println(base + " raise to the power " + power + " is: " + pow(base,power));
     }
-    public static int pow(int a, int b){
-        if(b == 0) return 1;
-        return a*pow(a,b-1);
+    public static int pow(int base, int power){
+        if(power == 0) return 1;
+        return base*pow(base,power-1);
     }
 }
