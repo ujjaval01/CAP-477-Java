@@ -13,7 +13,7 @@ public class PrintNToOneAndOneToN {
         if(n == 0) return;
         System.out.print(n + " ");
         print(n-1);
-        if(n!= 1) System.out.print(n + " ");
+        System.out.print(n + " ");
 
     }
 }
