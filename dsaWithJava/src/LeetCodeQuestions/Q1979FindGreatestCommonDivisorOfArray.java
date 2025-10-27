@@ -10,11 +10,19 @@ public class Q1979FindGreatestCommonDivisorOfArray {
         int min = Integer.MAX_VALUE; // 100||  3
         int max = Integer.MIN_VALUE; // 0  ||
         int res = 0;
-        for(int i = 0; i<arr.length; i++){
-            if(arr[i] < min) min = arr[i];
+//        for(int i = 0; i<arr.length; i++){
+//            if(arr[i] < min) min = arr[i];
+//        }
+//        for(int k = 0; k<arr.length; k++){
+//            if(arr[k] > max) max = arr[k];
+//        }
+
+        for(int a: arr){
+            min = Math.max(min,a);
         }
-        for(int k = 0; k<arr.length; k++){
-            if(arr[k] > max) max = arr[k];
+
+        for(int b: arr){
+            max = Math.max(max,b);
         }
 
         for(int j = 1; j<=max; j++){
