@@ -2,7 +2,7 @@ package Recursion;
 
 public class factorial {
     static void main() {
-        int n = 8;
+        int n = 5;
         int ans = find(n);
         System.out.println(ans);
     }
