@@ -7,14 +7,27 @@ public class LeastCommonMultiple {
         int res = lcm(a,b);
         System.out.println(res);
     }
-
-
-//     using brute force(Without gcd, less optimise) TC:- O(a × b)
+    //Using Gcd(Optimized) TC:- O(log(min(a, b)))
     public static int lcm(int a, int b){
-        int lcm = Math.max(a,b);
-        while (true){
-            if(lcm % a == 0 && lcm % b == 0) return lcm;
-            lcm++;
-        }
+        int gcd = gcd(a,b);
+        System.out.println("gcd : " + gcd);
+        //Formula:- (a * b) = [lcm(a,b) * hcf(a,b)]
+        return (a*b)/gcd;
     }
+
+    public static int gcd(int a, int b){
+        if(a == 0) return b;
+        return gcd(b%a, a);
+    }
+
+
+
+////     using brute force(Without gcd, less optimise) TC:- O(a × b)
+//    public static int lcm(int a, int b){
+//        int lcm = Math.max(a,b);
+//        while (true){
+//            if(lcm % a == 0 && lcm % b == 0) return lcm;
+//            lcm++;
+//        }
+//    }
 }
