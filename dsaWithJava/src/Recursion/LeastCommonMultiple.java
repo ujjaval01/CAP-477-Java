@@ -21,7 +21,6 @@ public class LeastCommonMultiple {
     }
 
 
-
 ////     using brute force(Without gcd, less optimise) TC:- O(a × b)
 //    public static int lcm(int a, int b){
 //        int lcm = Math.max(a,b);
