@@ -12,9 +12,8 @@ Constraints: 1 ≤ n ≤ 10
 */
 public class PowerOfNumber {
     static void main() {
-        int n = 9
 
-                ;
+        int n = 5;
         int res = reverseExponentiation(n);
         System.out.println(res);
     }
@@ -22,10 +21,7 @@ public class PowerOfNumber {
         // code here
         int r = rev(n);
         return pow(n, r);
-
-
     }
-
     public static int rev(int n){
         int rev = 0;
         while(n > 0){
@@ -34,7 +30,6 @@ public class PowerOfNumber {
         }
         return rev;
     }
-
     public static int pow(int n, int p){
         if(p == 0) return 1;
         return n * pow(n, p - 1);
