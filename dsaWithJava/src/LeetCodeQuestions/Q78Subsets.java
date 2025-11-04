@@ -13,7 +13,6 @@ public class Q78Subsets {
     public static List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         helper(new ArrayList<>(), nums, 0, list);
-        // Collections.sort() list of lists पर काम नहीं करेगा सीधे, इसलिए skip कर रहे हैं
         return list;
     }
 

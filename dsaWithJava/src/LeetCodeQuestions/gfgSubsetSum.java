@@ -11,6 +11,8 @@ Output: [0, 1, 1, 2, 2, 3, 3, 4]
 Explanation: The possible subset sums are 0 (no elements), 1 (either of the 1's), 2 (the element 2), and their combinations.*/
 
 import java.util.ArrayList;
+import java.util.List;
+
 public class gfgSubsetSum {
     static void main() {
         int[] arr = {2,3};
@@ -19,12 +21,12 @@ public class gfgSubsetSum {
     public static ArrayList<Integer> subsetSums(int[] arr) {
         // code here
         int n = arr.length;
-        ArrayList<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         helper(arr, 0, 0, list);
-        // return (ArrayList<Integer>) list;  // typecasting, if we are using list instead of arrayList
-        return list;
+         return (ArrayList<Integer>) list;  // typecasting, if we are using list instead of arrayList
+//        return list;
     }
-    public static void helper(int[] arr, int idx, int sum, ArrayList<Integer> list){
+    public static void helper(int[] arr, int idx, int sum, List<Integer> list){
         if(arr.length == idx){
             list.add(sum);
             return;
