@@ -16,15 +16,28 @@ public class RemoveDuplicateFromSortedArray {
 
     static int removeDuplicates(int[] arr) {
         if (arr.length == 0) return 0;
+//
+//        int i = 0; // points to last unique element
+//
+//        for (int j = 1; j < arr.length; j++) {
+//            if (arr[j] != arr[i]) { // new unique element found
+//                i++;
+//                arr[i] = arr[j];
+//            }
+//        }
+//        return i + 1; // new array length
 
-        int i = 0; // points to last unique element
-
-        for (int j = 1; j < arr.length; j++) {
-            if (arr[j] != arr[i]) { // new unique element found
+        int i = 0;
+        int j = 1;
+        while(j<arr.length){
+            if(arr[i] == arr[j]) j++;
+            else{
                 i++;
                 arr[i] = arr[j];
+                j++;
             }
         }
-        return i + 1; // new array length
+        return i+1;
+
     }
 }
