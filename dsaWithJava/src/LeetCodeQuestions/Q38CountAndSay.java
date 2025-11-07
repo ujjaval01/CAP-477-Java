@@ -1,4 +1,4 @@
-package Recursion;
+package LeetCodeQuestions;
 /*Given an integer n. Return the nth row of the following look-and-say pattern.
 1
 11
@@ -13,7 +13,7 @@ the previous member, counting the number of digits in groups of the same digit. 
 21 is read off as "one 2, then one 1" or 1211.
 1211 is read off as "one 1, one 2, then two 1s" or 111221.
 111221 is read off as "three 1s, two 2s, then one 1" or 312211.*/
-public class CountAndSay {
+public class Q38CountAndSay {
     static void main() {
         int n = 4;
         String ans = countAndSay(n);
@@ -40,3 +40,4 @@ public class CountAndSay {
         return ans;
     }
 }
+
