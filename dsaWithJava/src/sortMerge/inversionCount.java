@@ -1,12 +1,16 @@
 package sortMerge;
 
-public class simpleMS {
+public class inversionCount {
+    static int count;
     static void main() {
-        int[] arr = {5,2,6,4,7,8,1};
+        int[] arr = {2, 4, 1, 3, 5};
+        System.out.println(inversionCount(arr));
+    }
+    public static int inversionCount(int arr[]) {
+        // Code Here
+        count = 0;
         mergeSort(arr);
-        for (int e: arr){
-            System.out.print(e + " ");
-        }
+        return count;
 
     }
     public static void mergeSort(int[] arr){
@@ -25,7 +29,10 @@ public class simpleMS {
         int i = 0, j = 0, k = 0;
         while(i<a.length && j < b.length){
             if(a[i] <= b[j]) c[k++] = a[i++];
-            else  c[k++] = b[j++];
+            else{
+                count+=(a.length-i);
+                c[k++] = b[j++];
+            }
         }
         while (i<a.length) c[k++] = a[i++];
         while (j<b.length) c[k++] = b[j++];
