@@ -12,6 +12,7 @@ Input: arr[] = [10, 10, 10]
 Output: 0
 Explanation: As all the elements of array are same, so there is no inversion count.*/
 
+
 public class gfgInversionCount {
     static int count;
     static void main() {
