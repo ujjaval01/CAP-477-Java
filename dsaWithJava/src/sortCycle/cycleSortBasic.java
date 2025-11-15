@@ -15,14 +15,14 @@ public class cycleSortBasic {
             if(arr[i] == i+1) i++;
             else {
                 int val = arr[i];
-                int temp = arr[i];
-                arr[i] = arr[val-1];
-                arr[val-1] = temp;
+                swap(i, val-1, arr);
             }
         }
         return arr;
     }
-//    public static int swap(int a, int b, int[] arr){
-//
-//    }
+    public static void swap(int a, int b, int[] arr){
+        int temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
 }
