@@ -11,7 +11,6 @@ Input: nums = [0,1]
 Output: 2
 Explanation:
 n = 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.*/
-
 public class missingNumIfArrStartFrom0UsingCS {
     static void main() {
         int[] arr = {3,0,1};
@@ -39,7 +38,7 @@ public class missingNumIfArrStartFrom0UsingCS {
         arr[b] = temp;
     }
 
-// Mathemathical Approach....
+// Mathematical Approach....
     //     int n = arr.length;
     //     int actualSum = n * (n + 1)/2;
     //     int sum = 0;
@@ -47,6 +46,5 @@ public class missingNumIfArrStartFrom0UsingCS {
     //         sum = sum+e;
     //     }
     //     return actualSum - sum;
-
     // }
 }
