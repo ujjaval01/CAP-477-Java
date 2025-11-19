@@ -19,6 +19,7 @@ public class Q41FirstMissingPositive {
     public static int firstMissingPositive(int[] arr) {
         int i = 0, n = arr.length;
         while(i<n){
+ // Agar element 1. 0 se chota ele, 2. len se bda ele, 3. correct position, 4. duplicate ho to i++....
             if(arr[i] <=0 || arr[i] > n || arr[i]==i+1 || arr[i] == arr[arr[i]-1]) i++;
             else{
                 swap(i, arr[i]-1, arr);
