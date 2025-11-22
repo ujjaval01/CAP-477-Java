@@ -1,21 +1,12 @@
 package Collections.LinkedList;
 
-class Node {
-    int val;
-    Node next;
-
-    Node(int val) {
-        this.val = val;
-    }
-
-    public static void displayRec(Node head) {
+public class SimpleLinkedList {
+    void displayRec(Node head) {
         if (head == null) return;
         System.out.print(head.val + " ");
         displayRec(head.next);
-
     }
-
-    public static void display(Node head) {
+    void display(Node head) {
         Node temp = head;
         while (temp != null) {
             System.out.print(temp.val + " ");
@@ -23,19 +14,15 @@ class Node {
         }
         System.out.println();
     }
-
     public static int getEleInIdx(Node head, int idx) {  // 0 based Indexing....
-//        int res = 0;
+        // int res = 0;
         for (int i = 0; i < idx; i++) {
-//            res = head.val;
-//            head = head.next;
+//        res = head.val;
+//        head = head.next;
             head = head.next;
         }
         return head.val;
     }
-}
-
-public class SimpleLinkedList {
     static void main() {
         Node a = new Node(10); Node b = new Node(20);
         Node c = new Node(30); Node d = new Node(40);
@@ -46,7 +33,7 @@ public class SimpleLinkedList {
 //        System.out.println(a.next);
 //        display(a);
 //        displayRec(a);
-        System.out.println(Node.getEleInIdx(a, 2));
+        System.out.println( getEleInIdx(a, 2));
     }
 
 }

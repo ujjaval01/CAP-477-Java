@@ -1,8 +1,13 @@
 package Collections.LinkedList;
 
-//class Node{
-//
-//}
+class Node {
+    int val;
+    Node next;
+
+    Node(int val) {
+        this.val = val;
+    }
+}
 
 
 public class OwnLinkedList {
