@@ -4,13 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* deleteAtIndex () () ()*/
-class Node {
-    int val;
-    Node next;
-    Node(int val) {
-        this.val = val;
-    }
-}
+
 class Linkedlist{
     Node head;  // In java by default Null
     Node tail; // In java by default Null
@@ -69,7 +63,7 @@ class Linkedlist{
             System.out.println("List is empty...");
             return;
         }
-        if(head == tail){
+        if(head == tail) {
             head = tail = null;
             System.out.println("List is empty...");
             return;
