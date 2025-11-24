@@ -133,9 +133,7 @@ public class OwnLinkedList {
 //        ll.addAtTail(30);  ll.display();
 //        ll.addAtHead(50);  ll.display();
 //        System.out.println(ll.size());
-//        ll.deltAtHead();
-//        ll.display();
-//        System.out.println(ll.getEleInIdx(2));
+//        ll.deltAtHead(); (2));
 //        System.out.println(ll.size());
 //        System.out.println(ll.size());
 //        ll.display();

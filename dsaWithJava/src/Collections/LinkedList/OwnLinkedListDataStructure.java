@@ -1,5 +1,7 @@
 package Collections.LinkedList;
 
+import java.util.Vector;
+
 class Node{
     int val;
     Node next;
@@ -47,6 +49,62 @@ class LinkedListt{
         }
         return count;
     }
+    void insert(int idx, int val){
+        if(idx<0 || idx > size()){
+            System.out.println("Invalid Index...");
+        }
+        Node temp = head;
+
+        for(int i = 0; i<idx-1; i++){
+            temp = temp.next;
+        }
+        Node t = new Node(val);
+        t.next = temp.next;
+        temp.next = t;
+    }
+    void deltAtHead(){
+        if(head == null){
+            System.out.println("List is empty...");
+            return;
+        }
+        if(head == tail) {
+            head = tail = null;
+            System.out.println("List is empty...");
+            return;
+        }
+        head = head.next;
+    }
+    void deltAtTail(){
+        Node temp = head;
+        if(size() == 0){
+            System.out.println("Node is empty..");
+        } else if (size() == 1) {
+            head = tail = null;
+        }else{
+            while(temp != tail){
+                temp = temp.next;
+                if(temp.next == tail){
+                    tail = temp;
+                    tail.next = null;
+                    return;
+                }
+            }
+        }
+    }
+    void delete(int idx){
+        if(idx<0 || idx > size()){
+            System.out.println("Invalid Index...");
+        }else if(idx == 0) deltAtHead();
+        else if (idx == size()-1) deltAtTail();
+        else {
+            Node temp = head;
+            for(int i = 0; i<idx-1; i++){
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+        }
+
+    }
 
 
 
@@ -68,16 +126,15 @@ class LinkedListt{
 public class OwnLinkedListDataStructure {
     static void main(String[] args) {
         LinkedListt ll = new LinkedListt();
-        ll.addAtHead(20);
-        ll.addAtHead(30);
-        ll.addAtHead(40);
-        ll.addAtHead(50);
+//        ll.addAtHead(20);
+//        ll.addAtHead(30);
+//        ll.addAtHead(40);
+//        ll.addAtHead(50);
+//        ll.display();
+//        ll.insert(2,100);
+//        ll.display();
+        ll.delete(2);
         ll.display();
-        ll.addAtTail(10);
-        ll.addAtTail(70);
-        ll.display();
-        System.out.println(ll.get(2));
-        System.out.println(ll.size());
 
     }
 }
