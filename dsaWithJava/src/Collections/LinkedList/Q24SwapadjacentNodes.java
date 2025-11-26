@@ -1,17 +1,22 @@
 package Collections.LinkedList;
 
-class Solution {
-//    public ListNode middleNode(ListNode head) {
-//        ListNode slow = head;
-//        ListNode fast = head;
-//        while(fast != null && fast.next != null){
-//            slow = slow.next;
-//            fast = fast.next.next;
-//        }
-//        return slow;
-//    }
-    public ListNode swapPairs(ListNode head) {
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {
 
+    }
+    ListNode(int val) {
+        this.val = val;
+    }
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+}
+
+class Solution2{
+    public ListNode swapPairs(ListNode head) {
         // Dummy node to handle head changes
         ListNode dummy = new ListNode(0);
         dummy.next = head;
@@ -36,7 +41,8 @@ class Solution {
 }
 
 
-public class Q876MiddleOfLinkedList {
+
+public class Q24SwapAdjacentNodes {
     static void main() {
         Solution s = new Solution();
         ListNode a = new ListNode(10);
