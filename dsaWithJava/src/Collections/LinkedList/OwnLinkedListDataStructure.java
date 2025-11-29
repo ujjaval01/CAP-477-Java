@@ -1,19 +1,10 @@
 package Collections.LinkedList;
 
-import java.util.Vector;
 
-class Node{
-    int val;
-    Node next;
-    Node(int val){
-        this.val = val;
-    }
-}
 class LinkedListt{
     // By default Null....
     Node head;
     Node tail;
-
     void addAtHead(int val){
         Node temp = new Node(val);
         if(head == null) head = tail = temp;

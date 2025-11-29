@@ -18,6 +18,18 @@ class practice{
             head = temp;
         }
     }
+
+    void insertAtIdx(int idx, int val){
+        Nodee temp = head;
+        for(int i = 0; i<idx-1; i++){
+            temp = temp.next;
+        }
+        Nodee newNodee = new Nodee(val);
+        newNodee.next = temp.next.next;
+        temp.next = newNodee;
+
+    }
+
     void display(){
         if(head == null) return;
         Nodee temp = head;
@@ -36,6 +48,8 @@ public class basicOne {
         p.addAtHead(20);
         p.addAtHead(30);
         p.addAtHead(40);
+        p.display();
+        p.insertAtIdx(2, 100);
         p.display();
 
 
