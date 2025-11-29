@@ -1,6 +1,6 @@
 package Collections.LinkedList;
 
-public class Node{
+class Node{
     int val;
     Node next;
     Node(int val){
