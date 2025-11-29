@@ -1,17 +1,9 @@
 package Collections.LinkedList;
 
-class Nodee{
-    int val;
-    Nodee next;
-    Nodee(int val){
-        this. val = val;
-    }
-}
-
 class practice{
-    Nodee head;
+    Node head;
     void addAtHead(int val){
-        Nodee temp = new Nodee(val);
+        Node temp = new Node(val);
         if(head == null) head = temp;
         else{
             temp.next = head;
@@ -20,11 +12,11 @@ class practice{
     }
 
     void insertAtIdx(int idx, int val){
-        Nodee temp = head;
+        Node temp = head;
         for(int i = 0; i<idx-1; i++){
             temp = temp.next;
         }
-        Nodee newNodee = new Nodee(val);
+        Node newNodee = new Node(val);
         newNodee.next = temp.next.next;
         temp.next = newNodee;
 
@@ -32,7 +24,7 @@ class practice{
 
     void display(){
         if(head == null) return;
-        Nodee temp = head;
+        Node temp = head;
         while(temp != null){
             System.out.print(temp.val + " ");
             temp = temp.next;

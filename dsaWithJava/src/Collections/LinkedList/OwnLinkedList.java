@@ -36,7 +36,6 @@ class Linkedlist{
 
     }
 
-
     void addAtTail(int val){
         Node temp = new Node(val);
         if(head == null){
