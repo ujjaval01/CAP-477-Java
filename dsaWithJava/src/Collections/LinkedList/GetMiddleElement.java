@@ -18,6 +18,10 @@ public class GetMiddleElement {
     static int getMiddle(Node head){
         Node temp = head;
         Node temp2 = head;
+        // If only 1 node or empty list
+        if(head == null || head.next == null){
+            return -1;
+        }
         while(temp != null && temp.next != null){
             temp = temp.next.next;
             temp2 = temp2.next;
