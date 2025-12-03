@@ -1,7 +1,7 @@
 package genericPractice;
 
 /* Isnme hum kisi bhi genric methods ko boundry me bnd kr skte h, jaise we want this method
-   only support numbers, then we want to bounded this like below example....*/
+   only support numbers, then we want to bound this like below example....*/
 
 public class BoundedGeneric {
     static void main() {
