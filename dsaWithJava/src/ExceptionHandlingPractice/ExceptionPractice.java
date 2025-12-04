@@ -20,7 +20,7 @@ public class ExceptionPractice {
             throw new Exception("i am throw vali exception...");
 
         }finally {
-            assert System.out != null;
+//            assert System.out != null;
             System.out.println("i am finally block...");
         }
     }

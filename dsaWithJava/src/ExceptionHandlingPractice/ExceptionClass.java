@@ -25,8 +25,8 @@ public class ExceptionClass {
         int a = 90;
         if(a == 90){
             try{
-//               throw new ExcClass("i am const msg");
-               throw new ArithmeticException("1. I am the arithmetic exception");
+               throw new ExcClass("i am const msg");
+//               throw new ArithmeticException("1. I am the arithmetic exception");
             }catch (Exception e){
                 System.out.println("2. " + e.getMessage());
                 System.out.println("3. " + e.toString() + "\n\"4. \" + ");

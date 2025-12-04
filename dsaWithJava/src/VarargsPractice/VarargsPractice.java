@@ -16,6 +16,7 @@ public class VarargsPractice {
         System.out.println("the sum of tha value of a and b is "+ sum(4,5));
         System.out.println("the sum of tha value of a, b and c is "+ sum(4,5,6));
         System.out.println("the sum of tha value of a, b, c and d is "+ sum(4,5,6,7));
+        System.out.println("the sum of tha value of a, b, c and d..... is "+ sum(4,5,6,7,5,4,3,2,2,3,4,5));
 
     }
 }

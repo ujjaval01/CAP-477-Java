@@ -9,6 +9,9 @@ public class first {
         }catch (Exception e){
             System.out.println(e);
         }
+        finally {
+            System.out.println("Always execute...");
+        }
     }
 
 }

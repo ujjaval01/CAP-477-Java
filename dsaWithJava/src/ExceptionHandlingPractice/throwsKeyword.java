@@ -10,7 +10,7 @@ karke exception likh dunga, taaki another dev mere meth koz carefully use kre
 
 public class throwsKeyword {
     static void main() {
-        int arr[] = new int[5];
+        int[] arr = new int[5];
 
         try{
             getnum(arr);
@@ -19,7 +19,7 @@ public class throwsKeyword {
         }
     }
 
-    static int getnum(int[] arr) throws ArithmeticException {
+    static int getnum(int[] arr) throws NullPointerException {
         return arr[8];
     }
 }

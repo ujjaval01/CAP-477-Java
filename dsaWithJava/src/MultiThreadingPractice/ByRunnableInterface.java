@@ -29,7 +29,8 @@ class thread2 implements Runnable{
 //            }
         }
     }
-}class thread3 implements Runnable{
+}
+class thread3 implements Runnable{
     @Override
     public void run(){
         int i = 0;
@@ -44,7 +45,12 @@ class thread2 implements Runnable{
         }
     }
 }
+class thread4 implements Runnable{
+    public void run(){
 
+    }
+
+}
 
 public class ByRunnableInterface {
     static void main() {
