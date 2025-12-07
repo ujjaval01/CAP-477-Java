@@ -12,7 +12,7 @@ public class Q206RevALinkedList {
     public static ListNode reverseList(ListNode head) {
         ListNode curr = head;
         ListNode prev = null;
-        ListNode fwd = null;
+        ListNode fwd;
         while(curr != null){
             fwd = curr.next;
             curr.next = prev;
