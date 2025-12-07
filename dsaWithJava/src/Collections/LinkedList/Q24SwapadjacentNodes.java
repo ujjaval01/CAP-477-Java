@@ -1,9 +1,7 @@
 package Collections.LinkedList;
 
-
-
-class Solution2{
-    public ListNode swapPairs(ListNode head) {
+public class Q24SwapAdjacentNodes {
+    public static ListNode swapPairs(ListNode head) {
         // Dummy node to handle head changes
         ListNode dummy = new ListNode(0);
         dummy.next = head;
@@ -25,31 +23,17 @@ class Solution2{
 
         return dummy.next;
     }
-}
-
-
-
-public class Q24SwapAdjacentNodes {
     static void main() {
-        Solution s = new Solution();
         ListNode a = new ListNode(10);
         ListNode b = new ListNode(20);
         ListNode c = new ListNode(30);
         ListNode d = new ListNode(40);
         ListNode e = new ListNode(50);
-        a.next = b;
-        b.next = c;
-        c.next = d;
-        d.next = e;
-//        ListNode n = s.middleNode(a);
-        ListNode n = s.swapPairs(a);
-        ListNode temp = n;
-        while(temp != null){
-            System.out.print(temp.val + " ");
-            temp= temp.next;
+        a.next = b; b.next = c; c.next = d; d.next = e;
+        ListNode res = swapPairs(a);
+        while(res != null){
+            System.out.print(res.val + " ");
+            res= res.next;
         }
-        System.out.println();
-
-
     }
 }
