@@ -1,6 +1,14 @@
 package LeetCodeQuestions;
 
 public class Q206RevALinkedList {
+//    public static ListNode reverseListUsingRecursion(ListNode head) {
+//        if(head == null || head.next == null) return head;
+//        ListNode a = head.next;
+//        head.next = null;
+//        ListNode b = reverseList(a);
+//        a.next = head;
+//        return b;
+//    }
     public static ListNode reverseList(ListNode head) {
         ListNode curr = head;
         ListNode prev = null;
