@@ -1,10 +1,10 @@
 package Collections.LinkedList;
 
-public class gfgAddNumberLinkedLists {
+public class AddNumberLinkedLists {
     public static Node rev(Node head){
         Node curr = head;
         Node prev = null;
-        Node fwd = null;
+        Node fwd;
         while(curr != null){
             fwd = curr.next;
             curr.next = prev;

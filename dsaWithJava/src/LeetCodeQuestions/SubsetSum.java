@@ -13,7 +13,7 @@ Explanation: The possible subset sums are 0 (no elements), 1 (either of the 1's)
 import java.util.ArrayList;
 import java.util.List;
 
-public class gfgSubsetSum {
+public class SubsetSum {
     static void main() {
         int[] arr = {2,3};
         System.out.println(subsetSums(arr));

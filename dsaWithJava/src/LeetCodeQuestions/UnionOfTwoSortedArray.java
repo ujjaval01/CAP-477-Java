@@ -1,9 +1,8 @@
 package LeetCodeQuestions;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class gfgUnionOfTwoSortedArray {
+public class UnionOfTwoSortedArray {
     static void main() {
         int[] a = {1,3,4,5,6};
         int[] b = {1,2,3};

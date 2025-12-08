@@ -1,6 +1,6 @@
 package Collections.LinkedList;
 
-public class gfgReorderList {
+public class ReorderList {
     public static Node rev(Node head){
         Node curr = head;
         Node prev = null;

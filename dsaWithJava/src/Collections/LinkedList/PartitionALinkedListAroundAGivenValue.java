@@ -1,6 +1,6 @@
 package Collections.LinkedList;
 
-public class gfgPartitionALinkedListAroundAGivenValue {
+public class PartitionALinkedListAroundAGivenValue {
     public static Node partition(Node head, int x) {
         // Your code here
         Node t = head;

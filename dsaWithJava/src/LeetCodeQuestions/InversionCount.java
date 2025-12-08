@@ -13,7 +13,7 @@ Output: 0
 Explanation: As all the elements of array are same, so there is no inversion count.*/
 
 
-public class gfgInversionCount {
+public class InversionCount {
     static int count;
     static void main() {
         int[] arr = {2, 4, 1, 3, 5};

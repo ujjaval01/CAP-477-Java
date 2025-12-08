@@ -1,6 +1,6 @@
 package Collections.LinkedList;
 
-public class GFGLeftRotateByK {
+public class LeftRotateByK {
     public static int length(Node head){
         int len = 0;
         Node temp = head;

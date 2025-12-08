@@ -1,6 +1,6 @@
 package LeetCodeQuestions;
 
-public class gfgSubsetSumProblem {
+public class SubsetSumProblem {
     static void main() {
         int[] arr = {3, 34, 4, 12, 5, 2};
         int sum = 9;
