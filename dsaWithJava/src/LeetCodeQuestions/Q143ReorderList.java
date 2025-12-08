@@ -50,5 +50,6 @@ public class Q143ReorderList {
             System.out.print(a.val + " ");
             a = a.next;
         }
+
     }
 }
