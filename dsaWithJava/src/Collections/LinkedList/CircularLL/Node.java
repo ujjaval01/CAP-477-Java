@@ -1,6 +1,5 @@
-package Collections.LinkedList;
-
-public class Node{
+package Collections.LinkedList.CircularLL;
+class Node {
     int val;
     Node next;
     Node(int val){
