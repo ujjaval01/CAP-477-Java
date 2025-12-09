@@ -3,7 +3,6 @@ package Collections.LinkedList.CircularLL;
 public class DeleteNode {
     static Node deleteNode(Node head, int key) {
         if(head == null) return null;
-
         Node temp = head;
         if(head.val == key){
             if(head.next == head){
