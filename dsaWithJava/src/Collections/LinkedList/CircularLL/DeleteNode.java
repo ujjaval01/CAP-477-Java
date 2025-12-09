@@ -37,14 +37,10 @@ public class DeleteNode {
         Node f = new Node(8);
         a.next = b; b.next = c; c.next = d; d.next = e; e.next = f; f.next =a;
         int k = 1;
-        Node res = deleteNode(a, k);
-        Node temp = a;
-        while(temp.next != a){
+        Node temp = deleteNode(a, k);
+        do{
             System.out.print(temp.val + " ");
             temp = temp.next;
-        }
-        System.out.print(temp.val);
-
-
+        }while (temp != a);
     }
 }
