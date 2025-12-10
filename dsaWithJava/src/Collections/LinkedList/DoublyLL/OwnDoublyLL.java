@@ -23,7 +23,16 @@ class DLL{
         }
         size++;
     }
-
+    public void insertAtTail(int val){
+        Node temp = new Node(val);
+        if(head == null) head = tail = temp;
+        else{
+            tail.next = temp;
+            temp.prev = tail;
+            tail = temp;
+        }
+        size++;
+    }
 }
 public class OwnDoublyLL {
     static void main() {
