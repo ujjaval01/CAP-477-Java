@@ -117,15 +117,15 @@ class LinkedListt{
 public class OwnLinkedListDataStructure {
     static void main(String[] args) {
         LinkedListt ll = new LinkedListt();
-//        ll.addAtHead(20);
-//        ll.addAtHead(30);
-//        ll.addAtHead(40);
-//        ll.addAtHead(50);
-//        ll.display();
+        ll.addAtHead(20);
+        ll.addAtHead(30);
+        ll.addAtHead(40);
+        ll.addAtHead(50);
+        ll.display();
 //        ll.insert(2,100);
 //        ll.display();
-        ll.delete(2);
-        ll.display();
+//        ll.delete(2);
+//        ll.display();
 
     }
 }
