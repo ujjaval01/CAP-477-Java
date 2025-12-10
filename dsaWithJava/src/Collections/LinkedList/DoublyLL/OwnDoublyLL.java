@@ -45,6 +45,18 @@ class DLL{
         }
         size--;
     }
+    public void deleteAtTail(){
+        if(head == null){
+            System.out.println("List is already empty...");
+            return;
+        }else if(head.next == null){
+            head = tail = null;
+        }else{
+            tail = tail.prev;
+            tail.next = null;
+        }
+        size--;
+    }
 }
 public class OwnDoublyLL {
     static void main() {
