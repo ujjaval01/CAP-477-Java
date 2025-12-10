@@ -57,6 +57,30 @@ class DLL{
         }
         size--;
     }
+    public void insertAtIdx(int idx, int val){
+        if(idx > size || idx < 0){
+            System.out.println("Invalid Index...");
+            return;
+        }
+        if(size == 0){
+            insertAtHead(val);
+            return;
+        }
+        if(idx == size) {
+            insertAtTail(val);
+            return;
+        }
+        Node newNode = new Node(val);
+        Node temp = head;
+        for(int i = 1; i<idx; i++){
+            temp = temp.next;
+        }
+        newNode.prev = temp;
+        newNode.next = temp.next;
+        temp.next = newNode;
+        temp.next.prev = newNode;
+        size++;
+    }
 }
 public class OwnDoublyLL {
     static void main() {
