@@ -89,6 +89,14 @@ class DLL{
         }
         System.out.println();
     }
+    public void displayRev(){
+        Node temp = tail;
+        while(temp != null){
+            System.out.print(temp.val + " ");
+            temp = temp.prev;
+        }
+        System.out.println();
+    }
 }
 public class OwnDoublyLL {
     static void main() {
