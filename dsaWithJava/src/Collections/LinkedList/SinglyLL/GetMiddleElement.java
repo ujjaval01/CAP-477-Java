@@ -1,4 +1,4 @@
-package Collections.LinkedList;
+package Collections.LinkedList.SinglyLL;
 public class GetMiddleElement {
 //    static int getMiddle(Node head){
 //        Node temp = head;

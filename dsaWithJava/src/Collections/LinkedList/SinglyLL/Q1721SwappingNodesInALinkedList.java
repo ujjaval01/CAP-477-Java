@@ -1,4 +1,4 @@
-package Collections.LinkedList;
+package Collections.LinkedList.SinglyLL;
 
 public class Q1721SwappingNodesInALinkedList {
     public static ListNode swapNodes(ListNode head, int k) {

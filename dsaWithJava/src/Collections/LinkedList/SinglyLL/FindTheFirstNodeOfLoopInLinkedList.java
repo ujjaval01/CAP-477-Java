@@ -1,4 +1,4 @@
-package Collections.LinkedList;
+package Collections.LinkedList.SinglyLL;
 
 public class FindTheFirstNodeOfLoopInLinkedList {
     public static int cycleStart(Node head) {

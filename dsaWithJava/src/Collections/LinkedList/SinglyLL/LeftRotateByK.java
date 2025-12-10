@@ -1,4 +1,4 @@
-package Collections.LinkedList;
+package Collections.LinkedList.SinglyLL;
 
 public class LeftRotateByK {
     public static int length(Node head){

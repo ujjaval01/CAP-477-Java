@@ -1,4 +1,4 @@
-package Collections.LinkedList;
+package Collections.LinkedList.SinglyLL;
 /*GFG
 Given a singly linked list, delete the middle of the linked list.
 Note:

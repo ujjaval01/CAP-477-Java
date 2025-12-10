@@ -1,4 +1,4 @@
-package Collections.LinkedList;
+package Collections.LinkedList.SinglyLL;
 
 public class Q24SwapAdjacentNodes {
     public static ListNode swapPairs(ListNode head) {

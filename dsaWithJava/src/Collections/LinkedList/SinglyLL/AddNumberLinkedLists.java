@@ -1,4 +1,4 @@
-package Collections.LinkedList;
+package Collections.LinkedList.SinglyLL;
 
 public class AddNumberLinkedLists {
     public static Node rev(Node head){

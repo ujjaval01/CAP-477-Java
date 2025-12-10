@@ -1,4 +1,4 @@
-package Collections.LinkedList;
+package Collections.LinkedList.SinglyLL;
 
 public class Q160IntersectionOfTwoLinkedLists {
     public static ListNode getIntersectionNode(ListNode head1, ListNode head2) {

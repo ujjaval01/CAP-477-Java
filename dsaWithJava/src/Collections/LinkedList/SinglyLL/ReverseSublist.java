@@ -1,4 +1,4 @@
-package Collections.LinkedList;
+package Collections.LinkedList.SinglyLL;
 
 public class ReverseSublist {
     public static Node reverseBetween(int a, int b, Node head) {

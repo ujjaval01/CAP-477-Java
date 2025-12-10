@@ -1,6 +1,6 @@
-package Collections.LinkedList;
+package Collections.LinkedList.SinglyLL;
 
-import static Collections.LinkedList.DeleteMidNode.display;
+import static Collections.LinkedList.SinglyLL.DeleteMidNode.display;
 
 public class getKthFromLast {
     static int getKthFromLast(Node head, int k) {

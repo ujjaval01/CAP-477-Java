@@ -1,4 +1,4 @@
-package Collections.LinkedList;
+package Collections.LinkedList.SinglyLL;
 
 public class Q328OddEvenLinkedList {
     public static ListNode oddEvenList(ListNode head) {

@@ -1,4 +1,4 @@
-package Collections.LinkedList;
+package Collections.LinkedList.SinglyLL;
 
 public class PartitionALinkedListAroundAGivenValue {
     public static Node partition(Node head, int x) {
