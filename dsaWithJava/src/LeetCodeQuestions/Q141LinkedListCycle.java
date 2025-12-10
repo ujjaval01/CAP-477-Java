@@ -1,6 +1,6 @@
 package LeetCodeQuestions;
 
-//import Collections.LinkedList.SinglyLL.Node;
+//import LinkedList.SinglyLL.Node;
 
 public class Q141LinkedListCycle {
     public static boolean hasCycle(ListNode head) {

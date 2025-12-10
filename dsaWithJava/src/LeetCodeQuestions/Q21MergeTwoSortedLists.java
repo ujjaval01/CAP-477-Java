@@ -1,6 +1,6 @@
 package LeetCodeQuestions;
 
-//import Collections.LinkedList.ListNode;
+//import LinkedList.ListNode;
 
 public class Q21MergeTwoSortedLists {
     static ListNode sortedMerge(ListNode a, ListNode b) {
