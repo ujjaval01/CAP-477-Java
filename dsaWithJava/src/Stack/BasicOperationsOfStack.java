@@ -29,8 +29,20 @@ public class BasicOperationsOfStack {
         return st;
     }
 
-
-        static void display(Stack<Integer> st){
+    static Stack<Integer> reverseStackEle(Stack<Integer> st){
+        int n = st.size();
+        int[] arr = new int[n];
+        int i = 0;
+        while(!st.isEmpty()){
+            arr[i] = st.pop();
+            i++;
+        }
+        for(int j = 0; j<n; j++){
+            st.push(arr[j]);
+        }
+        return st;
+    }
+    static void display(Stack<Integer> st){
         Stack<Integer> st2 = new Stack<>();
         while(!st.isEmpty()){
             int top = st.pop();
@@ -53,7 +65,8 @@ public class BasicOperationsOfStack {
 //        }
 //        display(AddAtAnyPosition(st, 4, 70));
         display(st);
+//        display(removeAtAnyPosition(st, 2));
         System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaa");
-        display(removeAtAnyPosition(st, 2));
+        display(reverseStackEle(st));
     }
 }
