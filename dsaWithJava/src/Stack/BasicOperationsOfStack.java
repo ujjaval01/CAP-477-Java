@@ -42,6 +42,18 @@ public class BasicOperationsOfStack {
         }
         return st;
     }
+
+    static Stack<Integer> pushEleAtBottom(Stack<Integer> st, int ele){   // recursively....
+       if(st.isEmpty()){
+           st.push(ele);
+           return st;
+       }
+       int top = st.pop();
+       pushEleAtBottom(st, ele);
+       st.push(top);
+       return  st;
+    }
+
     static void display(Stack<Integer> st){
         Stack<Integer> st2 = new Stack<>();
         while(!st.isEmpty()){
@@ -67,6 +79,7 @@ public class BasicOperationsOfStack {
         display(st);
 //        display(removeAtAnyPosition(st, 2));
         System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaa");
-        display(reverseStackEle(st));
+//        display(reverseStackEle(st));
+        display(pushEleAtBottom(st,920));
     }
 }
