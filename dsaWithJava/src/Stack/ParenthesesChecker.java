@@ -4,7 +4,8 @@ import java.util.Stack;
 
 public class ParenthesesChecker {
     static void main() {
-
+        String str = "((){}[])";
+        System.out.println(isBalanced(str));
     }
     public static boolean isBalanced(String s) {
         // code here
