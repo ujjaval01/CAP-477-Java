@@ -3,6 +3,14 @@ package Stack;
 import java.util.Stack;
 
 public class BasicOperationsOfStack {
+    static void getSize(Stack<Integer> st){
+        Stack<Integer> st2 = new Stack<>();
+        int size = 0;
+        while (st2.isEmpty()){
+            st2.push(st.pop());
+            size++;
+        }
+    }
     static void removeAtTop(Stack<Integer> st){
         st.pop();
     }
@@ -42,6 +50,15 @@ public class BasicOperationsOfStack {
         }
         return st;
     }
+    static void reverseStackEleRecursively(Stack<Integer> st){
+        if(st.isEmpty()){
+            return;
+        }
+        int ele = st.pop();
+        reverseStackEleRecursively(st);
+        pushEleAtBottom(st, ele);
+
+    }
 
     static Stack<Integer> pushEleAtBottom(Stack<Integer> st, int ele){   // recursively....
        if(st.isEmpty()){
@@ -76,10 +93,13 @@ public class BasicOperationsOfStack {
 //            System.out.print(st.pop() + " ");
 //        }
 //        display(AddAtAnyPosition(st, 4, 70));
-        display(st);
+//        display(st);
+        System.out.println(st);
 //        display(removeAtAnyPosition(st, 2));
         System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaa");
 //        display(reverseStackEle(st));
-        display(pushEleAtBottom(st,920));
+//        display(pushEleAtBottom(st,920));
+        reverseStackEleRecursively(st);
+        display(st);
     }
 }
