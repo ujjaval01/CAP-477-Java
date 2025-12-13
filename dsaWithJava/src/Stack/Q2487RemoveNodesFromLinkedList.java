@@ -1,0 +1,37 @@
+package Stack;
+
+import java.util.Stack;
+
+public class Q2487RemoveNodesFromLinkedList {
+    static void main() {
+        Node a = new Node(5);
+        Node b = new Node(2);
+        Node c = new Node(13);
+        Node d = new Node(3);
+        Node e = new Node(8);
+        a.next = b; b.next = c; c.next = d; d.next = e;
+        Node temp = removeNodes(a);
+        while (temp!=null){
+            System.out.print(temp.val + " ");
+            temp = temp.next;
+        }
+    }
+    public static Node removeNodes(Node head) {
+        Stack<Integer> st = new Stack<>();
+        Node temp = head;
+        while (temp != null){
+            while(!st.isEmpty() && st.peek() < temp.val){
+                st.pop();
+            }
+            st.push(temp.val);
+            temp = temp.next;
+        }
+        Node newHead = null;
+        while (!st.isEmpty()){
+            Node a = new Node(st.pop());
+            a.next = newHead;
+            newHead = a;
+        }
+        return newHead;
+    }
+}
