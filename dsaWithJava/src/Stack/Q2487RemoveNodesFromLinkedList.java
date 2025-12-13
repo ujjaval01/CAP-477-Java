@@ -16,22 +16,50 @@ public class Q2487RemoveNodesFromLinkedList {
             temp = temp.next;
         }
     }
-    public static Node removeNodes(Node head) {
-        Stack<Integer> st = new Stack<>();
-        Node temp = head;
-        while (temp != null){
-            while(!st.isEmpty() && st.peek() < temp.val){
-                st.pop();
+//    public static Node removeNodes(Node head) {
+//        Stack<Integer> st = new Stack<>();
+//        Node temp = head;
+//        while (temp != null){
+//            while(!st.isEmpty() && st.peek() < temp.val){
+//                st.pop();
+//            }
+//            st.push(temp.val);
+//            temp = temp.next;
+//        }
+//        Node newHead = null;
+//        while (!st.isEmpty()){
+//            Node a = new Node(st.pop());
+//            a.next = newHead;
+//            newHead = a;
+//        }
+//        return newHead;
+//    }
+    static Node rev(Node head){
+        Node curr = head;
+        Node prev = null;
+        Node fwd;
+        while(curr != null){
+            fwd = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = fwd;
+        }
+        return prev;
+    }
+    public static Node removeNodes(Node head){
+        if(head == null) return null;
+        Node r = rev(head);
+        Node i = r;
+        Node j = r;
+        while(j != null && j.next != null){
+            if(j.next.val < i.val){
+                j.next = j.next.next;
+            }else{
+                j = j.next;
+                i = j;
             }
-            st.push(temp.val);
-            temp = temp.next;
         }
-        Node newHead = null;
-        while (!st.isEmpty()){
-            Node a = new Node(st.pop());
-            a.next = newHead;
-            newHead = a;
-        }
-        return newHead;
+        return rev(r);
     }
 }
+
