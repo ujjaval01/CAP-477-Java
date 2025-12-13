@@ -16,6 +16,7 @@ public class Q2487RemoveNodesFromLinkedList {
             temp = temp.next;
         }
     }
+    // Non optimized with leetcode 74 ms
 //    public static Node removeNodes(Node head) {
 //        Stack<Integer> st = new Stack<>();
 //        Node temp = head;
@@ -46,6 +47,7 @@ public class Q2487RemoveNodesFromLinkedList {
         }
         return prev;
     }
+    // Optimized with leetcode 7 ms
     public static Node removeNodes(Node head){
         if(head == null) return null;
         Node r = rev(head);
