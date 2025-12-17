@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Q503NextGreaterElementII {
     static void main() {
-        int[] arr = {1,2,1};
+        int[] arr = {4,6,1,7,5,9,8,1};
         int[] res = nextGreaterElement(arr);
         for(int r: res){
             System.out.print(r + " ");
